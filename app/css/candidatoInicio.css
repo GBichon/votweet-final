@@ -1,0 +1,21 @@
+#candidatos{
+	text-align: center;
+	padding: 20px;
+}
+
+#candidatos .contenedor{
+	display: inline-flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.info-candidato{
+	margin: 20px;
+}
+
+.info-candidato img{
+	width: 180px;
+	height: 180px;
+	border-radius: 50%;
+	
+}

@@ -1,0 +1,63 @@
+[
+		{
+			"Identificador": "I",
+			"Nombre": "I de Tarapacá",
+			"aprobacion": "50",
+			"desaprobacion": "50"
+		},
+		{
+			"Identificador": "II",
+			"Nombre": "II de Antofagasta",
+			"aprobacion": "50",
+			"desaprobacion": "50"
+		},
+		{
+			"Identificador": "II",
+			"Nombre": "II de Antofagasta",
+			"aprobacion": "50",
+			"desaprobacion": "40"
+		},
+		{
+			"Identificador": "II",
+			"Nombre": "II de Antofagasta",
+			"aprobacion": "60",
+			"desaprobacion": "50"
+		},
+		{
+			"Identificador": "III",
+			"Nombre": "II de Antofagasta",
+			"aprobacion": "50",
+			"desaprobacion": "50"
+		},
+		{
+			"Identificador": "IV",
+			"Nombre": "II de Antofagasta",
+			"aprobacion": "50",
+			"desaprobacion": "50"
+		},
+		{
+			"Identificador": "V",
+			"Nombre": "II de Antofagasta",
+			"aprobacion": "50",
+			"desaprobacion": "50"
+		},
+		{
+			"Identificador": "VI",
+			"Nombre": "II de Antofagasta",
+			"aprobacion": "50",
+			"desaprobacion": "50"
+		},
+		{
+			"Identificador": "VII",
+			"Nombre": "II de Antofagasta",
+			"aprobacion": "50",
+			"desaprobacion": "50"
+		},
+		{
+			"Identificador": "VII",
+			"Nombre": "II de Antofagasta",
+			"aprobacion": "50",
+			"desaprobacion": "50"
+		}
+
+]

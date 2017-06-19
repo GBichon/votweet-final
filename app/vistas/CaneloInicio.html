@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>VoTweet</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimun-scale=1">
+	<link rel="stylesheet" href="../../css/fontello.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="../../css/estilos.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>	
+	<!-- GoogleCharts unminified for development -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-google-chart/1.0.0-beta.1/ng-google-chart.js" type="text/javascript"></script>
+	<!-- GoogleCharts minified for production -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-google-chart/1.0.0-beta.1/ng-google-chart.min.js" type="text/javascript"></script>
+	<!--Load the AJAX API-->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<!-- gchart.js contiene el script y parseo para el grafico -->
+    <script type="text/javascript" src="../../js/resources/historico/gchart11.js"></script>
+    <script src="http://d3js.org/d3.v3.js"></script>
+	
+</head>
+<body ng-app="candidatos" ng-controller="controlCdtos">
+	<header>
+		<div class="contenedor">
+		<h1 href="vistaInicio.html"><i class="fa fa-eye" aria-hidden="true"></i>VoTweet</h1>
+			<input type="checkbox" id="menu-bar">
+
+			<label for="menu-bar"><i class="fa fa-bars" aria-hidden="true"></i></label>
+			<nav class="menu">
+				<a href="vistaDetalleAprobacionCanelo.html"><i class="fa fa-thumbs-up" aria-hidden="true"></i>Detalle nivel de aprobación</a>
+				<a href=""><i class="fa fa-twitter" aria-hidden="true"></i>Tweets Relevantes</a>
+				<a href=""><i class="fa fa-globe" aria-hidden="true"></i>Opinión Internacional</a>
+				<a href="index11.html"><i class="fa fa-users" aria-hidden="true"></i>Interacción con usuarios</a>
+				<a href="vistaInicio.html"><i class="fa fa-home" aria-hidden="true"></i>Página Principal</a>
+			</nav>
+		</div>
+	</header>
+
+	<main>
+		<section id="bannerCandidato">
+			<img src="../../img/bannerCanelo.jpg">
+			<div class="contenedor">
+				<h2>{{candidatos[10].cdtoNombre}}</h2>				
+			</div>	
+		</section>
+
+		<div>
+			<section>
+			<div style="padding: 10px; float: left; width: 45%; text-align: justify;">
+			<div id="chart_div" style="width: 850px; height: 650px;"></div>
+			</div>
+			</section>
+			<section>
+				<div style="padding: 30px; float: right; width: 38%; text-align: justify;">
+				<h2>Antecedentes del candidato</h2>
+				<br>
+				<p>Nombre: {{candidatos[10].cdtoNombre}}</p>
+				<br>
+				<p>Edad: {{candidatos[10].cdtoEdad}} años</p>
+				<br>
+				<p>Twitter: @{{candidatos[10].cdtoCuentaTwitter}}</p>
+				<br>
+				<p>{{candidatos[10].cdtoDescripcion}}</p>
+				</div>
+			</section>
+		</div>
+	</main>
+
+	<footer>
+	<br><br><br><br><br><br>
+	<br><br><br><br><br><br>
+	<br><br><br><br><br><br>
+	<br><br><br><br><br><br>
+	<br><br><br><br>
+	<br><br><br><br>
+	<br><br><br><br><br><br><br><br><br>
+
+		<div class="contenedor">
+			<p class="copy">OmnipoTweet &copy; 2017</p>
+			<div class="sociales">
+				<a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+				<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+				<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+			</div>
+		</div>
+	</footer>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+	<script type="text/javascript" src="../../controladores/vistaPrincipalCtrl.js"></script>
+
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+</body>
+	<script src="http://d3js.org/d3.v3.js"></script>
+</html>

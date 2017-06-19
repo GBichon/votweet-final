@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>VoTweet: ¿Quiénes somos?</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimun-scale=1">
+		<link rel="stylesheet" type="text/css" href="../css/estilos.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	</head>
+	<body ng-app="candidatos" ng-controller="controlCdtos">
+		<header>
+			<div class="contenedor">
+				<!-- show left eye icon + logo -->
+				<h1 class="logo">
+					<a href="vistaInicio.html" class="logo"><i class="fa fa-eye" aria-hidden="true"></i> VoTweet</a>
+				</h1>
+				<!-- show menu icon -->
+				<input type="checkbox" id="menu-bar">
+				<label for="menu-bar">
+					<i class="fa fa-bars" aria-hidden="true"></i>
+				</label>
+				<!-- menu start -->
+				<nav class="menu">
+					<a href="vistaInicio.html">
+						<i class="fa fa-home" aria-hidden="true" style="padding-right: 10px;"></i>Inicio
+					</a>
+					<a href="quienesSomos.html">
+						<i class="fa fa-question" aria-hidden="true" style="padding-right: 10px;"></i>¿Quiénes somos?
+					</a>
+					<a href="terminos.html">
+						<i class="fa fa-book" aria-hidden="true" style="padding-right: 10px;"></i>Términos y condiciones
+					</a>
+					<a href="ayuda.html">
+						<i class="fa fa-ambulance" aria-hidden="true" style="padding-right: 10px;"></i>Ayuda
+					</a>
+					<a href="">
+						<i class="fa fa-power-off" aria-hidden="true" style="padding-right: 10px;"></i>Cerrar sesión
+					</a>
+				</nav>
+			</div>
+		</header>
+		
+		<main>
+			<!-- banner superior --->
+			<section id="banner">
+				<img src="../img/banner2.jpg">
+					<div class="contenedor">
+						<h2>Elecciones Presidenciales Chile 2017</h2>
+						<p style="text-align:center;">¿Quién será el próximo presidente del país?</p>
+						<a href="#popup" class="popup-link" style="margin: auto; text-align:center; margin-top: 20px;">Leer más</a>
+					</div>
+			</section>
+
+
+			<section id="text-wrapper">
+				<h2>Ayuda</h2>
+				<table style="width: 100%;">
+					<tr>
+						<td style="width: 310px; text-align: center;">
+							<img src="../img/ayuda.png">
+						</td>
+						<td style="text-align: justify;">
+							<p>¿Tienes alguna duda sobre cómo se utiliza VoTweet? Puedes preguntar a <a href="mailto:soporte@votweet.cl" style="color: #999;">soporte@votweet.cl</a>, también puedes leer algunas de las preguntas más frecuentes a continuación.</p>
+							
+						</td>
+					</tr>
+				</table>
+
+				<table>
+					<tr>
+						<td style="text-align: justify; padding-top: 20px; width: 100%">
+							<div id="text-wrapper-equipo">
+								<h3>¿De dónde provienen los datos?</h3>
+								<ul>
+									<li>
+										Los datos son entregados públicamente por Twitter a través de su API. Es decir, los tweets emitidos son procesados y los datos resultantes (por ejemplo, número de likes de un tweet) son mostrados en gráficos en forma de niveles de aprobación o desaprobación.
+									</li>
+								</ul>
+								
+								<h3>¿Cómo puedo ver los gráficos?</h3>
+								<ul>
+									<li>
+										En la página principal hay un menú que muestra la lista de candidatos presidenciales. Usted debe seleccionar la imagen del candidato que desee, y se mostrará en pantalla la información disponible sobre dicho candidato.
+									</li>
+								</ul>
+								
+								<h3>¿Cuán confiables son estas métricas?</h3>
+								<ul>
+									<li>
+										Los niveles de aprobación y desaprobación se calculan en relación a diferentes variables obtenidas en cada tweet que haga alusión a un cierto candidato. Un tweet se identifica haciendo uso de palabras claves, por lo tanto, si en su tweet usted escribe "Sebastián Piñera", su tweet será analizado respecto a dicho candidato, y se medirán variables como la cantidad de likes que obtuvo su tweet, las veces que fue compartido, entre otras. Esto quiere decir que la información que se entrega, es la publicada por las personas registradas en Twitter, y no refleja necesariamente una visión de país respecto a las elecciones.
+									</li>
+								</ul>
+								
+								<h3>Hay un candidato que no aparece y me interesa su información</h3>
+								<ul>
+									<li>
+										Los candidatos disponibles en este sitio web son los vigentes para las elecciones presidenciales 2017, por lo tanto, los candidatos que hayan bajado su candidatura no serán mostrados. Sin embargo, si usted nota que falta información sobre un candidato vigente, no dude en contactarnos via mail: <a href="mailto:soporte@votweet.cl" style="color: #999;">soporte@votweet.cl</a>. 
+									</li>
+								</ul>
+							</div>
+						</td>
+					</tr>
+				</table>
+			</section>
+
+		
+			<section>
+				<div class="modal-wrapper" id="popup">
+					<div class="popup-contenedor">
+					   <h2>ELECCIONES : PRIMARIAS PRESIDENCIALES</h2>
+						<h3>A. CHILE VAMOS</h3>
+						<p>1 SEBASTIAN PIÑERA ECHENIQUE INDEPENDIENTE</p>
+						<p>2 FELIPE KAST SOMMERHOFF EVOPOLI</p>
+						<p>3 MANUEL JOSE OSSANDON IRARRAZABAL INDEPENDIENTE</p>
+						<h3>B. FRENTE AMPLIO</h3>
+						<p>4 BEATRIZ SANCHEZ MUÑOZ INDEPENDIENTE</p>
+						<p>5 ALBERTO MAYOL MIRANDA  </p></p>
+					   <a class="popup-cerrar" href="#">X</a>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer>
+			<div class="contenedor">
+				<p class="copy">OmnipoTweet &copy; 2017</p>
+				<div class="sociales">
+					<a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+					<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+					<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+				</div>
+			</div>
+		</footer>
+		<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+		<script type="text/javascript" src="../controladores/vistaPrincipalCtrl.js"></script>
+
+		<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+	</body>
+</html>

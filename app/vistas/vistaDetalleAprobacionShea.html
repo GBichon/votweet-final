@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>VoTweet</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="../css/fontello.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/estilos.css">
+	<link rel="stylesheet" href="../css/historico.css">
+	<link rel="stylesheet" type="text/css" href="../css/prueba2.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    		<!-- Google fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+
+		<!-- D3.js -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
+	<!--Load the AJAX API-->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+	
+</head>
+<body ng-app="candidatos" ng-controller="controlCdtos">
+	<header>
+		<div class="contenedor">
+		<h1 href="vistaInicio.html"><i class="fa fa-eye" aria-hidden="true"></i>VoTweet</h1>
+			
+			<input type="checkbox" id="menu-bar">
+
+			<label for="menu-bar"><i class="fa fa-bars" aria-hidden="true"></i></label>
+			<nav class="menu">
+				<a href="vistaDetalleAprobacionShea.html"><i class="fa fa-thumbs-up" aria-hidden="true"></i>Detalle nivel de aprobación</a>
+				<a href=""><i class="fa fa-twitter" aria-hidden="true"></i>Tweets Relevantes</a>
+				<a href=""><i class="fa fa-globe" aria-hidden="true"></i>Opinión Internacional</a>
+				<a href="index9.html"><i class="fa fa-users" aria-hidden="true"></i>Interacción con usuarios</a>
+				<a href="KastInicio.html"><i class="fa fa-black-tie" aria-hidden="true"></i>Inicio Candidato</a>	
+			</nav>
+		</div>
+	</header>
+
+	<main>
+		<section id="bienvenidos">
+		<br>
+		<h3>Detalle Nivel de aprobación nacional y regional del candidato</h3>
+			<div id='dashboard'></div>
+			<script src="http://d3js.org/d3.v3.min.js"></script>
+			<script src="../js/resources/region/prueba2.js"></script>
+			<script src="../js/resources/region/nacionalRegional9.js"></script>
+		</section>
+		<section>
+			<fn>
+				En el histograma se puede apreciar el nivel de aprobación que posee el candidato seleccionado, según los datos obtenidos en base a la recolección de los últimos tweets. Esta representación se encuentra a partir de la enumeración que poseen las regiones. De igual forma a continuación se representa un diagrama de radio donde se muestra esta estadistica de forma porcentual. Donde la sección amarilla corresponde a la aprobación del candidato y la sección roja a la desaprobación que posee según la región.
+			</fn>
+		</section>
+		<section id="radar">
+		<div class="contenedor" align="center">
+			<div class="radarChart"></div>			
+			<script src="../js/resources/radar/radarChart.js"></script>	
+			<script src="../js/resources/radar/radarChartDatos9.js"></script>
+		</div>
+		</section>
+
+	</main>
+
+	<footer>
+		<div class="contenedor">
+			<p class="copy">OpmnipoTweet &copy; 2017</p>
+			<div class="sociales">
+				<a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+				<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+				<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+			</div>
+		</div>
+	</footer>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+	<script type="text/javascript" src="../controladores/vistaPrincipalCtrl.js"></script>
+
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+</body>
+
+</html>

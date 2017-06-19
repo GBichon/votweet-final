@@ -1,0 +1,57 @@
+#bannerCandidato{
+	margin-top: 50px;
+	position: relative;
+}
+
+#bannerCandidato img{
+	width: 100%;
+	height: auto;
+}
+
+#bannerCandidato .contenedor{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	color: #fff;
+}
+
+#bannerCandidato h2{
+	font-size: 28px;
+}
+
+#bannerCandidato a{
+	display: block;
+	color: white;
+	height: 50px;
+	text-decoration: none;
+	padding: 15px;
+	border-bottom: 1px solid rgba(255,255,255,0.5);
+}
+
+#bannerCandidato a:hover{
+	background: rgba(51,51,51,0.5);
+}
+
+@media(min-width: 480px){
+	#bannerCandidato h2{
+		font-size: 50px;
+	}
+
+	#bannerCandidato a{
+		margin-top: 25px;
+	}
+}
+
+
+@media(min-width: 768px){
+	#bannerCandidato{
+		height: 530px;
+		overflow: hidden;
+	}
+
+	#bannerCandidato img{
+		height: auto;
+		margin-top: -85px;
+	}
+}

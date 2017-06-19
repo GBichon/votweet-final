@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>VoTweet</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimun-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/estilos.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    </script>
+    
+</head>
+<body ng-app="candidatos" ng-controller="controlCdtos">
+    <header>
+        <div class="contenedor">
+        <h1 href="vistaInicio.html"><i class="fa fa-eye" aria-hidden="true"></i>VoTweet</h1>
+            
+            <input type="checkbox" id="menu-bar">
+
+            <label for="menu-bar"><i class="fa fa-bars" aria-hidden="true"></i></label>
+            <nav class="menu">
+                <a href="vistaDetalleAprobacionShea.html"><i class="fa fa-thumbs-up" aria-hidden="true"></i>Detalle nivel de aprobación</a>
+                <a href=""><i class="fa fa-twitter" aria-hidden="true"></i>Tweets Relevantes</a>
+                <a href=""><i class="fa fa-globe" aria-hidden="true"></i>Opinión Internacional</a>
+                <a href="index9.html"><i class="fa fa-users" aria-hidden="true"></i>Interacción con usuarios</a>
+                <a href="SheaInicio.html"><i class="fa fa-black-tie" aria-hidden="true"></i>Inicio Candidato</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+    <section>
+        <div class="contenedor">
+            
+        </div>
+    </section>
+
+        <section>
+
+        <br><br><br><br><br>
+        <div class="contenedor">
+        <h3 align="center">Interacción con Usuarios</h3>
+        <p align="center">Mediante la siguiente representción de un grafo, se busca conseguir representar el nivel de interacción que poseen los candidatos con los usuarios de Twitter. Esto en base a lo capturado por el colector y que sirve de utilidad para determinar las estadisticas que son generadas por este observatorio</p>
+        <br>
+
+        <div align="center">
+        <h4>Simbología</h4>
+            <table>           
+            <tr>
+              <td><div class="circulo" style="background:#E6E6E6;"></div></td>
+              <td>&nbsp;&nbsp;&nbsp;&nbsp;Usuarios de Twitter</td>
+
+            </tr>
+             
+            <tr>
+              <td><div class="color-chart"></div></td>
+              <td>&nbsp;&nbsp;&nbsp;&nbsp;Candidato presidencial</td>
+            </tr>
+             
+            <tr>
+              <td><div class="rectangulo" style="background:#FF0000;"></div></td>
+              <td>&nbsp;&nbsp;&nbsp;&nbsp;Relación Negativa</td>
+            </tr>
+            <tr>
+              <td><div class="rectangulo" style="background:#848484;"></div></td>
+              <td>&nbsp;&nbsp;&nbsp;&nbsp;Relación Neutral</td>
+            </tr>
+            <tr>
+              <td><div class="rectangulo" style="background:#2E9AFE;"></div></td>
+              <td>&nbsp;&nbsp;&nbsp;&nbsp;Relación Positiva</td>
+            </tr>
+            </table>    
+
+        </div>
+         <br><br>
+
+            <div align='center' id="d3_selectable_force_directed_graph" style="width: 910px; height: 500px; margin: auto; margin-bottom: 12px">
+                    <svg />
+            </div>
+
+            <link rel='stylesheet' href='d3v4-selectable-zoomable-force-directed-graph.css'>
+            <script src="https://d3js.org/d3.v4.js"></script>
+            <!-- importaciones para grafo -->
+            <script src="../js/resources/grafo/d3v4-brush-lite.js"></script>
+            <script src="../js/resources/grafo/d3v4-selectable-force-directed-graph.js"></script>
+
+            <script>
+                var svg = d3.select('#d3_selectable_force_directed_graph');
+                d3.json('../js/resources/grafo/datos.json', function(error, graph) {
+                if (!error) {
+                    createV4SelectableForceDirectedGraph(svg, graph);
+                } else {
+                    console.error(error);
+                }
+                });
+            </script>
+        </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+
+        <div class="contenedor">
+            <p class="copy">OmnipoTweet &copy; 2017</p>
+            <div class="sociales">
+                <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script type="text/javascript" src="../controladores/vistaPrincipalCtrl.js"></script>
+
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+</body>
+</html>
